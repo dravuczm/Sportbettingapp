@@ -5,14 +5,21 @@
  */
 package sportbettingapp;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Marci
  */
 public class SportsBettingService {
 
+    List<Player> players=new ArrayList<Player>();
     public SportsBettingService() {
+        
     }
-    
+    public void savePlayer(Player player){
+        players.add(player);
+    }
     
 }

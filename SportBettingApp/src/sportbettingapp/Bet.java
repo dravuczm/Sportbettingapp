@@ -5,6 +5,9 @@
  */
 package sportbettingapp;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Marci
@@ -12,13 +15,12 @@ package sportbettingapp;
 public class Bet {
     String description;
     SportEvent event;
-    Outcome outcome;
+    List<Outcome> outcome=new ArrayList<Outcome>();
     BetType type;
     
-    public Bet(String description, SportEvent event, Outcome outcome, BetType type){
+    public Bet(String description, SportEvent event, BetType type){
         this.description=description;
         this.event=event;
-        this.outcome=outcome;
         this.type=type;
     }
 }
