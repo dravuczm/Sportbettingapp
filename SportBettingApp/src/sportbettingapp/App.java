@@ -47,6 +47,7 @@ return event;
        }
     public static void main(String[] args) {
       SportEvent event= Test();
+      service.events.add(event);
         
         
     }
