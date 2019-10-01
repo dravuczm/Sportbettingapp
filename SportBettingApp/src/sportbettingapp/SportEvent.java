@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @author Marci
  */
-public class SportEvent {
+public class SportEvent implements TennisSportEvent,FootballSportEvent{
     String title;
     LocalDateTime startDate;
     LocalDateTime endDate;
