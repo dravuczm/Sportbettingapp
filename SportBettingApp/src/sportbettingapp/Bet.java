@@ -4,7 +4,11 @@
  * and open the template in the editor.
  */
 package sportbettingapp;
-
+enum GOALS{
+    NULLA,
+    EGY,
+    TOBB
+}
 /**
  *
  * @author Marci
@@ -12,4 +16,5 @@ package sportbettingapp;
 public class Bet {
     String description;
     SportEvent event;
+    GOALS Outcome;
 }
