@@ -17,4 +17,11 @@ public class OutcomeOdd {
     LocalDateTime validFrom;
     LocalDateTime validUntil;
     Outcome outcome;
+    
+    public OutcomeOdd(BigDecimal value, LocalDateTime validFrom, LocalDateTime validUntil, Outcome outcome){
+        this.value=value;
+        this.validFrom=validFrom;
+        this.validUntil=validUntil;
+        this.outcome=outcome;
+    }
 }
