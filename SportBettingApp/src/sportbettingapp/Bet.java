@@ -14,4 +14,11 @@ public class Bet {
     SportEvent event;
     Outcome outcome;
     BetType type;
+    
+    public Bet(String description, SportEvent event, Outcome outcome, BetType type){
+        this.description=description;
+        this.event=event;
+        this.outcome=outcome;
+        this.type=type;
+    }
 }
