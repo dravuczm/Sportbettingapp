@@ -9,10 +9,9 @@ package sportbettingapp;
  *
  * @author Marci
  */
-public class SportsBettingService {
+public class View {
 
-    public SportsBettingService() {
+    public View() {
     }
-    
     
 }

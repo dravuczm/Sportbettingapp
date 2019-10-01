@@ -15,8 +15,8 @@ public class App {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        SportEvent event=new SportEvent();
+        
+        
     }
     public static void createPlayer(){
         Player player=new Player();
