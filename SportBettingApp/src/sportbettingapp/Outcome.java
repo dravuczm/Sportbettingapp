@@ -11,4 +11,5 @@ package sportbettingapp;
  */
 public class Outcome {
     String description;
+    Bet bet;
 }
