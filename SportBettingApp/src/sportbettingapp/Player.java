@@ -6,17 +6,16 @@
 package sportbettingapp;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 /**
  *
  * @author Marci
  */
-public class Wager {
-    BigDecimal amount;
-    LocalDateTime timestampCreated;
-    boolean processed;
-    boolean win;
-    OutcomeOdd odd;
-    Player player;
+public class Player {
+    String name;
+    Integer accoutnNumber;
+    BigDecimal balance;
+    LocalDate birth;
+    
 }
