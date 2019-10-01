@@ -19,4 +19,5 @@ public class Wager {
     boolean win;
     OutcomeOdd odd;
     Player player;
+    Currency currency;  
 }

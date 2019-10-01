@@ -5,17 +5,12 @@
  */
 package sportbettingapp;
 
-import java.math.BigDecimal;
-import java.time.LocalDate;
-
 /**
  *
  * @author Marci
  */
-public class Player {
-    String name;
-    Integer accoutnNumber;
-    BigDecimal balance;
-    LocalDate birth;
-    Currency currency;
+enum Currency{
+HUF,
+EUR,
+USD
 }
