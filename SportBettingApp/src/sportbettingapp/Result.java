@@ -5,10 +5,18 @@
  */
 package sportbettingapp;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Marci
  */
 public class Result {
-    Outcome winnerOutcomes;
+   List<Outcome> winnerOutcomes;
+
+    public Result() {
+        this.winnerOutcomes = new ArrayList<Outcome>();
+    }
+   
 }

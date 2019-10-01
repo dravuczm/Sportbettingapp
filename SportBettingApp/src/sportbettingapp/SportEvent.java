@@ -6,6 +6,7 @@
 package sportbettingapp;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -16,6 +17,6 @@ public class SportEvent {
     String title;
     LocalDateTime startDate;
     LocalDateTime endDate;
-    List<Bet> betList;
+    List<Bet> betList=new ArrayList<Bet>();
     
 }
