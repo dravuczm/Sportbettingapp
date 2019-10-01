@@ -19,4 +19,12 @@ public class SportEvent implements TennisSportEvent,FootballSportEvent{
     LocalDateTime endDate;
     List<Bet> betList=new ArrayList<Bet>();
     Result result;
+    public SportEvent(){
+        
+    }
+    public SportEvent(String title, LocalDateTime startdate,LocalDateTime enddate){
+        this.title=title;
+        this.startDate=startdate;
+        this.endDate=enddate;
+    }
 }

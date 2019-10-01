@@ -18,5 +18,8 @@ public class App {
         // TODO code application logic here
         SportEvent event=new SportEvent();
     }
-    
+    public static void createPlayer(){
+        Player player=new Player();
+        
+    }
 }
