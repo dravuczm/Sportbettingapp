@@ -5,15 +5,16 @@
  */
 package sportbettingapp;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 /**
  *
  * @author Marci
  */
-public class Outcome {
-    String description;
-    Bet bet;
-    List<OutcomeOdd> outcomeOdds=new ArrayList<OutcomeOdd>();
+public class OutcomeOdd {
+    BigDecimal value;
+    LocalDateTime validFrom;
+    LocalDateTime validUntil;
+    Outcome outcome;
 }
