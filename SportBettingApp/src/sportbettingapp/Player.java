@@ -14,9 +14,22 @@ import java.time.LocalDate;
  */
 public class Player {
     String name;
-    Integer accoutnNumber;
+    Integer accountNumber;
     BigDecimal balance;
     LocalDate birth;
     Currency currency;
+
+    public Player() {
+    }
+
     
+    public Player(String name, Integer accountNumber, BigDecimal balance, LocalDate birth, Currency currency) {
+        this.name = name;
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.birth = birth;
+        this.currency = currency;
+    }
+    
+  
 }

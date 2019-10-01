@@ -5,6 +5,9 @@
  */
 package sportbettingapp;
 
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
 /**
  *
  * @author Marci
@@ -12,4 +15,18 @@ package sportbettingapp;
 public class User extends Player{
     String email;
     String password;
+
+    public User() {
+    }
+
+    
+    public User(String email, String password, String name, Integer accountNumber, BigDecimal balance, LocalDate birth, Currency currency) {
+        super(name, accountNumber, balance, birth, currency);
+        this.email = email;
+        this.password = password;
+    }
+
+   
+    
+   
 }
