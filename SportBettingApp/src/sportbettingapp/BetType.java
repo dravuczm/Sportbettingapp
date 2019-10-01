@@ -9,9 +9,10 @@ package sportbettingapp;
  *
  * @author Marci
  */
-public class Bet {
-    String description;
-    SportEvent event;
-    Outcome outcome;
-    BetType type;
+enum BetType{
+    WINNER,
+    GOALS,
+    PLAYERS_SCORE,
+    NUMBER_OF_SETS
+  
 }
