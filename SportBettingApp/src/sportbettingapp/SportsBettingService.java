@@ -18,6 +18,8 @@ public class SportsBettingService {
 
     List<Player> players=new ArrayList<Player>();
     List<SportEvent> events=new ArrayList<SportEvent>();
+        List<Wager> wagers=new ArrayList<Wager>();
+
     public SportsBettingService() {
         
     }
@@ -33,6 +35,9 @@ public class SportsBettingService {
 }
         return new Player();
 }
+    public List<SportEvent> findAllEvent(){
+        return this.events;
+    }
     
     public void calculateResults(){
         for (SportEvent event : events) 
@@ -49,4 +54,11 @@ public class SportsBettingService {
         }
 
     }
+    public void saveWager(Wager wager){
+        wagers.add(wager);
+    }
+    public List<Wager> findallWagers(){
+        return wagers;
+    }
+    
 }
