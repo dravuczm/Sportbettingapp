@@ -5,6 +5,8 @@
  */
 package sportbettingapp;
 
+import java.math.BigDecimal;
+import static java.sql.DriverManager.println;
 import java.util.List;
 
 /**
@@ -51,5 +53,18 @@ public class View {
         }
       return new OutcomeOdd();
     }
-    
+    public void printWager(Wager wager){
+        System.out.println( ""+wager.player.name+" "+wager.currency+" ");
+    }
+    public void printResult(List<SportEvent> events){
+              for (SportEvent event : events) 
+              {
+                  System.out.println(event.title+": ");
+                  for(Outcome outcome: event.result.winnerOutcomes){
+                      System.out.println(outcome.description);
+                  }
+              }
+              
+
+    }
 }
