@@ -58,4 +58,7 @@ return event;
         Player player=new Player();
         
     }
+    public static void addBet(){
+        service.events.get(0).betList.add(new Bet("Fogadás:",service.events.get(0),BetType.WINNER));
+    }
 }
