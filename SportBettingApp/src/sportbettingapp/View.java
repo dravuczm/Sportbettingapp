@@ -38,4 +38,18 @@ public class View {
         } 
         }
     }
+     public OutcomeOdd selectOutcomeOdd(List<SportEvent> events){
+      for (SportEvent event : events) 
+        {for(Bet bet : event.betList)
+        {
+            for(Outcome outcome:bet.outcome)
+            {for(OutcomeOdd odd:outcome.outcomeOdds){
+                return odd;
+            }
+            }
+        } 
+        }
+      return new OutcomeOdd();
+    }
+    
 }
