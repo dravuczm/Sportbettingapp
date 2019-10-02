@@ -50,6 +50,7 @@ return event;
       service.events.add(event);
         service.calculateResults();
         view.readPlayerData(service.players.get(0));
+        view.printOutcomeOdds(service.events);
         
     }
     public static void createPlayer(){
