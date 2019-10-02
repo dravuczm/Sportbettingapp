@@ -49,6 +49,7 @@ return event;
       SportEvent event= Test();
       service.events.add(event);
         service.calculateResults();
+        view.readPlayerData(service.players.get(0));
         
     }
     public static void createPlayer(){

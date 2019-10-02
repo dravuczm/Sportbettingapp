@@ -13,5 +13,9 @@ public class View {
 
     public View() {
     }
-    
+    public void readPlayerData(Player player){
+        String s="";
+        s=s+player.name+"  "+player.accountNumber+"  "+player.balance+player.currency;
+        System.out.print(s);
+    }
 }
