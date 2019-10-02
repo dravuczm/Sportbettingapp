@@ -26,5 +26,6 @@ public class SportEvent implements TennisSportEvent,FootballSportEvent{
         this.title=title;
         this.startDate=startdate;
         this.endDate=enddate;
+        this.result=new Result();
     }
 }

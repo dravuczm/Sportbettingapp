@@ -16,6 +16,9 @@ public class Outcome {
     String description;
     Bet bet;
     List<OutcomeOdd> outcomeOdds=new ArrayList<OutcomeOdd>();
+
+    public Outcome() {
+    }
     
     public Outcome(String description, Bet bet){
         this.description=description;

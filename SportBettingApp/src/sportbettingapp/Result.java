@@ -13,10 +13,10 @@ import java.util.List;
  * @author Marci
  */
 public class Result {
-   List<Outcome> winnerOutcomes;
+   List<Outcome> winnerOutcomes= new ArrayList<Outcome>();
 
     public Result() {
-        this.winnerOutcomes = new ArrayList<Outcome>();
+    
     }
    
 }

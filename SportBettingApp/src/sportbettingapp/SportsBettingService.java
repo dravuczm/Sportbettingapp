@@ -14,6 +14,7 @@ import java.util.Random;
  * @author Marci
  */
 public class SportsBettingService {
+               static Random rand = new Random();
 
     List<Player> players=new ArrayList<Player>();
     List<SportEvent> events=new ArrayList<SportEvent>();
@@ -38,10 +39,9 @@ public class SportsBettingService {
         {
             for (Bet bet : event.betList) 
             {
-                Random rand = new Random();
                 int n = rand.nextInt(bet.outcome.size());
-                bet.outcome.get(n);
-                
+             
+                event.result.winnerOutcomes.add(bet.outcome.get(n));
 
             }
 
